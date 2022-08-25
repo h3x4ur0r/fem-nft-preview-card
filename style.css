@@ -49,10 +49,37 @@ body {
   border-radius: 1rem;
 }
 
+
+.equilibrium {
+  position: relative;
+}
+
+.overlay-equilibrium {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.equilibrium:hover > .overlay-equilibrium {
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
 .card-heading {
   color: white;
   font-size: var(--fs-heading);
   margin: 1.875rem 0 1.5rem 0;
+  transition: color 0.5s ease-in;
+}
+
+.card-heading:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
 
 .card-paragraph {
@@ -82,9 +109,15 @@ body {
   color: var(--cyan);
 }
 
-b {
+.creator-name {
   font-weight: 400;
   color: white;
+  transition: color 0.5s ease-in;
+}
+
+.creator-name:hover {
+  cursor: pointer;
+  color: var(--cyan);
 }
 
 .creator {
