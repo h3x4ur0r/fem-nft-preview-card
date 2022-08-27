@@ -7,7 +7,7 @@
   --very-dark-blue-card: hsl(217, 54%, 16%);
   --very-dark-blue-line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
-  --fs-body: 0.9375rem; /* 15px */
+  --fs-body: 1.125rem; /* 15px */
   --fs-heading: 1.25rem; /* 20px */
 }
 
@@ -35,7 +35,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--fs-body);
   font-family: "Outfit", sans-serif;
   font-weight: 300;
   background-color: var(--very-dark-blue-bg);
@@ -84,6 +83,7 @@ body {
 
 .card-paragraph {
   letter-spacing: 0.065rem;
+  font-size: var(--fs-body);
 }
 
 .labels {
@@ -125,6 +125,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem 0 0 0;
+  font-size: var(--fs-body);
 }
 
 .img-avatar {
