@@ -46,8 +46,12 @@ body {
   padding: 1.5rem 1.5rem 1.5rem 1rem;
   background-color: var(--very-dark-blue-card);
   border-radius: 1rem;
+  transition: ease 0.3s all;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
 
 .equilibrium {
   position: relative;
@@ -133,6 +137,11 @@ body {
   margin: 0 1rem 0 0;
   border: solid var(--white) 1px;
   border-radius: 50%;
+  transition: ease 0.3s all;
+}
+
+.img-avatar:hover {
+  transform: translateX(-1.5rem) rotate(-360deg) scale(3);
 }
 
 .img-equilibrium {
